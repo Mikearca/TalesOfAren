@@ -1,0 +1,54 @@
+[gd_scene load_steps=10 format=3 uid="uid://6nbrdxq11a0b"]
+
+[ext_resource type="Texture2D" uid="uid://b1w0gmdjrj6ws" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-2.png" id="1_qp52p"]
+[ext_resource type="Texture2D" uid="uid://c80ccc4dolkyx" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-1.png" id="2_6ct3r"]
+[ext_resource type="Texture2D" uid="uid://btppx3sppt8t0" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-3.png" id="3_1kp85"]
+[ext_resource type="Texture2D" uid="uid://0nvcebxib6y3" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-4.png" id="4_qnedo"]
+[ext_resource type="Texture2D" uid="uid://5h47gcxh2rlv" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-5.png" id="5_wyqjk"]
+[ext_resource type="Texture2D" uid="uid://dsucp6sdkauww" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-6.png" id="6_k85er"]
+[ext_resource type="Texture2D" uid="uid://bjlgktsxpiajg" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-7.png" id="7_ebjds"]
+[ext_resource type="Texture2D" uid="uid://b1i6wug6v5csa" path="res://assets/sprites/2d_sprite_animation_assets/run_animation/run-8.png" id="8_y1dt5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_au0nh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qp52p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6ct3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_1kp85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qnedo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wyqjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_k85er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ebjds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_y1dt5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 255
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(507.00003, 5)
+scale = Vector2(13.345071, 12.776118)
+sprite_frames = SubResource("SpriteFrames_au0nh")
+frame = 5
+frame_progress = 0.9112753
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D"]
