@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bdjs67b3nsne"
+path="res://.godot/imported/water-splash.wav-497d17d48b63e44f7b524fd3cf8ce7ec.sample"
+
+[deps]
+
+source_file="res://assets/2D SCROLL/Legacy Collection/Legacy Collection/Assets/Packs/Sewers pack files/Sounds/water-splash.wav"
+dest_files=["res://.godot/imported/water-splash.wav-497d17d48b63e44f7b524fd3cf8ce7ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
